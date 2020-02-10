@@ -1,0 +1,16 @@
+
+
+                <form #medicineForm="ngForm" (ngsubmit)="onSubmit(medicineForm)">
+                  <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="medicineService.selectedMedicine._id">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input placeholder="Name" id="name" name="name" #name="ngModel" [(ngModel)]="medicineService.selectedMedicine.name" type="text">
+                     
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="price" id="price" name="price" #price="ngModel" [(ngModel)]="medicineService.selectedMedicine.price" type="number">
+                     
+                    </div>
+                  </div>
+                </form>
+          
